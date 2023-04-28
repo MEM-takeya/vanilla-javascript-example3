@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-javascript-example3",
+  "version": "1.0.0",
+  "description": "Hello MEMBERS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MEM-takeya/vanilla-javascript-example3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MEM-takeya/vanilla-javascript-example3/issues"
+  },
+  "homepage": "https://github.com/MEM-takeya/vanilla-javascript-example3#readme"
+}
