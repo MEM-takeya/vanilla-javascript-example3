@@ -12,3 +12,17 @@ console.log("数字じゃないです")
 if(isNaN(age)){
   console.log("数字じゃないです")
 }
+
+
+//promptでユーザーとやり取りできる
+//自分でないことのせんげんをするとき、PCからの返答
+//null 
+//undefined
+
+
+//まずはconst
+//一回割り当てたら絶対に中身が変わらない
+//constでやってエラーが出たらletを使えばいい
+
+//NaN　＝　not a numbers
+
