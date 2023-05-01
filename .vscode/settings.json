@@ -1,4 +1,5 @@
 {
+  "liveServer.settings.file": "./src/index.html",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
