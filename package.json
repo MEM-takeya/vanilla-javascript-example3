@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MEM-takeya/vanilla-javascript-example3/issues"
   },
-  "homepage": "https://github.com/MEM-takeya/vanilla-javascript-example3#readme"
+  "homepage": "https://github.com/MEM-takeya/vanilla-javascript-example3#readme",
+  "devDependencies": {
+    "prettier": "2.8.8"
+  }
 }
