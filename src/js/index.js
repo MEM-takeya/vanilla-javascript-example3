@@ -39,15 +39,15 @@
 //Array
 //Boolean
 
-let age = prompt("おいくつですか");
-age = parseInt(age);
-if (isNaN(age)) {
-  console.log("数字ではありません");
-} else if (age >= 30) {
-  console.log("30よりおおきいです");
-} else {
-  console.log("30よりちいさいです");
-}
+//let age = prompt("おいくつですか");
+//age = parseInt(age);
+//if (isNaN(age)) {
+//  console.log("数字ではありません");
+//} else if (age >= 30) {
+//  console.log("30よりおおきいです");
+//} else {
+//  console.log("30よりちいさいです");
+//}
 
 //console.logは指定したものをそのまま表示してくれる
 //console.dirは属性を表示してくれる
@@ -65,5 +65,19 @@ if (isNaN(age)) {
 //document.querySelector("#idA")
 //document.querySelectorAll(".classA")全部持ってきてくれる
 
+//const classA = document.querySelector(".classA");
+//classA.innerText = "Hello";
+
+//=================================
+//5/10　イベントについて
+//=================================
+//documentはjsからhtmlに接続するためのもの
+
 const classA = document.querySelector(".classA");
-classA.innerText = "Hello";
+console.log(classA);
+
+const handleClick = () => {
+  console.log("クリックされた！");
+};
+
+classA.addEventListener("click", handleClick);
