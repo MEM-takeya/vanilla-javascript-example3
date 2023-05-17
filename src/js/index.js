@@ -58,7 +58,7 @@
 //=================================
 //5/9　値の変更
 //=================================
-//document.getElementByIdz("idname"); //id名を持ってくる
+//document.getElementById("idname"); //id名を持ってくる
 //document.getElementsByClassName("classname")[0]; //配列でクラス名をもってくる.これは配列０の中のものを出力してくれる
 //document.querySelector(".classA")//同じものがあれば一番上のクラス名を取ってきてくれる
 //document.querySelector("#idA")
@@ -71,6 +71,9 @@
 //5/10　イベントについて
 //=================================
 //documentはjsからhtmlに接続するためのもの
+//イベントを要素に登録するためにはaddEventListenerを使うといい
+//addEventListener("タイプ", リスナー);
+classA.addEventListener("click", handleClick);
 
 const classA = document.querySelector(".classA");
 console.log(classA);
@@ -79,8 +82,6 @@ const handleClick = () => {
   console.log("クリックされた！");
 };
 
-classA.addEventListener("click", handleClick);
-
 //=================================
 //5/16　宿題
 //=================================
@@ -88,3 +89,14 @@ classA.addEventListener("click", handleClick);
 //キャレット
 
 //3つ目の「classA」を取得するためにはどうしたらよい？
+//×　document.querySelectorAll(".classA:last-child")
+//×
+
+//=================================
+//5/17
+//=================================
+//functionは関数
+
+//function handleClick(){
+//  console.log("クリックされました")
+//}
