@@ -73,14 +73,14 @@
 //documentはjsからhtmlに接続するためのもの
 //イベントを要素に登録するためにはaddEventListenerを使うといい
 //addEventListener("タイプ", リスナー);
-classA.addEventListener("click", handleClick);
+//classA.addEventListener("click", handleClick);
 
-const classA = document.querySelector(".classA");
-console.log(classA);
+//const classA = document.querySelector(".classA");
+//console.log(classA);
 
-const handleClick = () => {
-  console.log("クリックされた！");
-};
+//const handleClick = () => {
+//  console.log("クリックされた！");
+//};
 
 //=================================
 //5/16　宿題
@@ -100,3 +100,36 @@ const handleClick = () => {
 //function handleClick(){
 //  console.log("クリックされました")
 //}
+
+//=================================
+//5/19
+//=================================
+
+//↓↓↓↓マウス乗せたときオレンジ、話したときブルーにする↓↓↓↓
+const mouseEnter = document.querySelector(".mouseEnter");
+const mouseLeave = document.querySelector(".mouseLeave");
+
+function handlemouseEnter() {
+  mouseEnter.innerText = "マウスが入りました";
+  mouseEnter.style.color = "orange";
+}
+
+function handlmouseLeave() {
+  mouseEnter.innerText = "マウスが離れたよ";
+  mouseEnter.style.color = "blue";
+}
+
+mouseEnter.addEventListener("mouseenter", handlemouseEnter);
+mouseEnter.addEventListener("mouseleave", handlmouseLeave);
+//→addができるからremobeEventListenerもできる。
+
+//↓↓↓↓ウィンドウをリサイズしたら背景の色を白色にする↓↓↓↓
+function handoleresize() {
+  document.body.style.backgroundColor = "white";
+}
+
+window.addEventListener("resize", handoleresize);
+
+//ほかにもいろいろ
+window.addEventListener("copy", handolcopy); //copyをしたとき
+window.addEventListener("offline", handolcopy); //オフラインになったとき
