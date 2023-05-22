@@ -106,30 +106,36 @@
 //=================================
 
 //↓↓↓↓マウス乗せたときオレンジ、話したときブルーにする↓↓↓↓
-const mouseEnter = document.querySelector(".mouseEnter");
-const mouseLeave = document.querySelector(".mouseLeave");
+//const mouseEnter = document.querySelector(".mouseEnter");
+//const mouseLeave = document.querySelector(".mouseLeave");
 
-function handlemouseEnter() {
-  mouseEnter.innerText = "マウスが入りました";
-  mouseEnter.style.color = "orange";
-}
+//function handlemouseEnter() {
+//  mouseEnter.innerText = "マウスが入りました";
+//  mouseEnter.style.color = "orange";
+//}
 
-function handlmouseLeave() {
-  mouseEnter.innerText = "マウスが離れたよ";
-  mouseEnter.style.color = "blue";
-}
+//function handlmouseLeave() {
+//  mouseEnter.innerText = "マウスが離れたよ";
+//  mouseEnter.style.color = "blue";
+//}
 
-mouseEnter.addEventListener("mouseenter", handlemouseEnter);
-mouseEnter.addEventListener("mouseleave", handlmouseLeave);
-//→addができるからremobeEventListenerもできる。
+//mouseEnter.addEventListener("mouseenter", handlemouseEnter);
+//mouseEnter.addEventListener("mouseleave", handlmouseLeave);
+//→addができるからremoveEventListenerもできる。
 
 //↓↓↓↓ウィンドウをリサイズしたら背景の色を白色にする↓↓↓↓
-function handoleresize() {
-  document.body.style.backgroundColor = "white";
-}
+//function handoleresize() {
+//  document.body.style.backgroundColor = "white";
+//}
 
-window.addEventListener("resize", handoleresize);
+//window.addEventListener("resize", handoleresize);
 
 //ほかにもいろいろ
-window.addEventListener("copy", handolcopy); //copyをしたとき
-window.addEventListener("offline", handolcopy); //オフラインになったとき
+//window.addEventListener("copy", handolcopy); //copyをしたとき
+//window.addEventListener("offline", handolcopy); //オフラインになったとき
+
+//=================================
+//5/22
+//=================================
+//https://ja.javascript.info/function-basics?afsdads
+//[課題]デフォルト値まで読む！
