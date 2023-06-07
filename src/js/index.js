@@ -139,3 +139,40 @@
 //=================================
 //https://ja.javascript.info/function-basics?afsdads
 //[課題]デフォルト値まで読む！
+
+//=================================
+//6/7
+//=================================
+const h1 = document.querySelector("h1");
+const button = document.querySelector("button");
+
+const currentColor = h1.style.color;
+/*
+function handlClick() {
+  let currentColor = h1.style.color;
+  if (currentColor === "orange") {
+    h1.style.color = "teal";
+  } else {
+    h1.style.color = "orange";
+  }
+}
+*/
+
+//removeをいれないと、オレンジと青どちらも入ってしまっているので、不必要なクラスを一度削除してあげる必要がある
+/*
+function handlClick{
+  if(h1.classList.contains("colorToOrange")){
+    h1.classList.add("colorToTeal");
+    h1.classList.remove("colorToOrange");
+  }else{
+    h1.classList.add("colorToOrange");
+    h1.classList.remove("colorToTeal");
+  }
+}
+*/
+//トグルを使えば、1行で済ませられる！
+function handlClick() {
+  h1.classList.toggle("colorToOrange");
+}
+
+button.addEventListener("click", handlClick);
