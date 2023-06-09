@@ -143,10 +143,10 @@
 //=================================
 //6/7
 //=================================
-const h1 = document.querySelector("h1");
-const button = document.querySelector("button");
+//const h1 = document.querySelector("h1");
+//const button = document.querySelector("button");
 
-const currentColor = h1.style.color;
+//const currentColor = h1.style.color;
 /*
 function handlClick() {
   let currentColor = h1.style.color;
@@ -171,8 +171,24 @@ function handlClick{
 }
 */
 //トグルを使えば、1行で済ませられる！
-function handlClick() {
-  h1.classList.toggle("colorToOrange");
-}
+//function handlClick() {
+//  h1.classList.toggle("colorToOrange");
+//}
 
-button.addEventListener("click", handlClick);
+//button.addEventListener("click", handlClick);
+
+//=================================
+//6/9
+//=================================
+//Formを利用してデータ転送が可能。
+//GETとPOSTがある
+
+/*↓↓↓↓ログインボタンを押しても更新がかからないような処理↓↓↓↓*/
+const loginForm = document.querySelector("#login-form");
+
+const onLoginBtnClick = (event) => {
+  event.preventDefault();
+  console.log("HELLO");
+};
+
+loginForm.addEventListener("submit", onLoginBtnClick);
