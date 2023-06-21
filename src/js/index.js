@@ -184,11 +184,30 @@ function handlClick{
 //GETとPOSTがある
 
 /*↓↓↓↓ログインボタンを押しても更新がかからないような処理↓↓↓↓*/
-const loginForm = document.querySelector("#login-form");
+//const loginForm = document.querySelector("#login-form");
 
-const onLoginBtnClick = (event) => {
-  event.preventDefault();
-  console.log("HELLO");
+//const onLoginBtnClick = (event) => {
+//  event.preventDefault();
+//  console.log("HELLO");
+//};
+
+//loginForm.addEventListener("submit", onLoginBtnClick);
+
+//=================================
+//6/21　復習
+//=================================
+
+const h1 = document.querySelector("h1");
+const button = document.querySelector("button");
+
+const handlClick = () => {
+  if (h1.classList.contains("teal")) {
+    h1.classList.remove("teal");
+    h1.classList.add("orange");
+  } else {
+    h1.classList.remove("orange");
+    h1.classList.add("teal");
+  }
 };
 
-loginForm.addEventListener("submit", onLoginBtnClick);
+button.addEventListener("click", handlClick);
