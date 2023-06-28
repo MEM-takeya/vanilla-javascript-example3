@@ -197,17 +197,31 @@ function handlClick{
 //6/21　復習
 //=================================
 
-const h1 = document.querySelector("h1");
-const button = document.querySelector("button");
+//const h1 = document.querySelector("h1");
+//const button = document.querySelector("button");
 
-const handlClick = () => {
-  if (h1.classList.contains("teal")) {
-    h1.classList.remove("teal");
-    h1.classList.add("orange");
-  } else {
-    h1.classList.remove("orange");
-    h1.classList.add("teal");
-  }
-};
+//const handlClick = () => {
+//  if (h1.classList.contains("teal")) {
+//    h1.classList.remove("teal");
+//    h1.classList.add("orange");
+//  } else {
+//    h1.classList.remove("orange");
+//    h1.classList.add("teal");
+//  }
+//};
 
 button.addEventListener("click", handlClick);
+
+//=================================
+//6/26
+//=================================
+const formInput = document.querySelector("#loginForm input");
+const formBtn = document.querySelector("#loginForm button");
+
+const handlClick = () => {
+  if (dormInput.value === "") {
+    alert("値がありません");
+  } else if (formInput.value <= 20) {
+    alert("未成年です");
+  }
+};
